@@ -1,0 +1,12 @@
+# Enola Gay
+use_synth :piano
+
+in_thread do
+  2.times do
+    play_pattern_timed [:C3,:C3,:G3,:C3,:Ab4,:C3,:G3,:C3], [0.25]
+    play_pattern_timed [:Ab3,:A3,:Eb3,:F3,:G3,:G3,:D3,:E3] , [0.25]
+  end
+end
+2.times do
+  play_pattern_timed [:r,:Eb3,:Eb3,:C3], [0.5]
+end
